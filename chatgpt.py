@@ -10,7 +10,7 @@ import socket
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
-# Disable SSL warnings
+# Disable SSL warnings otherwise y might get some error hehe
 import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
@@ -76,7 +76,7 @@ PAYLOAD_CONFIG = {
     "client_prepare_state": "success"
 }
 
-# ── Clipboard helper (optional dependency) ──────────────────────────────
+# ── Clipboard helper (optional dependency umm but i'll recommends to use) ──────────────────────────────
 try:
     import pyperclip
     CLIPBOARD_AVAILABLE = True
